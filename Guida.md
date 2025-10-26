@@ -7,9 +7,10 @@ Questa guida fornisce i passaggi e gli script Cypher corretti per scaricare e im
 1.  **Scarica i Dati:** Scarica i file `listings.csv` e `reviews.csv` dal link fornito nella tua guida originale.
 2.  **Trova la Cartella `import`:**
     * Apri l'applicazione Neo4j Desktop.
+    * Crea il tuo database il Local Instances
     * Trova il tuo database **attivo** (quello con il pallino verde "Active").
-    * Clicca sui tre puntini (`...`) accanto al nome del database.
-    * Seleziona **Open folder** > **import**.
+    * Clicca sull'icona della cartella del patch dell'istanza **Open folder**
+    * Vai nella cartella **import** o creala se non c'è.
 3.  **Sposta i File:** Sposta entrambi i file `listings.csv` e `reviews.csv` che hai scaricato *dentro* questa cartella `import`.
 4.  **Controlla i Nomi:** Assicurati che i nomi dei file siano *esattamente* `listings.csv` e `reviews.csv` (tutto in minuscolo e senza numeri o testo aggiuntivo).
 5.  **RIAVVIA IL DATABASE (Cruciale):**
