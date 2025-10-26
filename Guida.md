@@ -110,7 +110,7 @@ h.superhost  = CASE WHEN row.host_is_super_host = "t" THEN true ELSE false END,
 h.location  = row.host_location,
 h.verified  = CASE WHEN row.host_identity_verified = "t" THEN true ELSE false END,
 h.image  = row.host_picture_url
-ON MATCH SET h.count = coalesce(l.count, 0) + 1
+ON MATCH SET h.count = coalesce(h.count, 0) + 1
 MERGE (l:Listing {listing_id: row.id})
 MERGE (h)-[:HOSTS]->(l);
 ```
